@@ -1,0 +1,19 @@
+int in1 = 11;
+int in2 = 10;
+
+void setup()
+{
+  pinMode(in1, OUTPUT);
+  pinMode(in2, OUTPUT);
+}
+
+void loop()
+{
+  analogWrite(in1, 150);
+  digitalWrite(in2, LOW);
+  delay(2000);
+
+  digitalWrite(in1, LOW);
+  analogWrite(in2, 200);
+  delay(3000);
+}
